@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Responsive media styling with aspect ratio */
+        .responsive-media {
+            position: relative;
+            width: 100%;
+            max-width: 800px; /* Match content width */
+            margin: 0 auto; /* Center content */
+            aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+        }
+        .responsive-media iframe,
+        .responsive-media video {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border: none;
+        }
+
+        /* Special fix for p5.js project container */
+        .p5-container {
+            width: 100%;
+            max-width: 800px;
+            height: 600px; /* Fixed height for p5 canvas */
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+
+        /* Center align text for headings and descriptions */
+        .gallery h3, .gallery p {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -20,20 +51,53 @@
         <main>
             <section class="gallery">
                 <h1>Gallery</h1>
+
+                <!-- Existing Content -->
                 <h3>Self Portrait</h3>
-                <img src="media/images/DanielFoulen_Selfie600px.jpg" alt="RASTER IMAGES" class="gallery-img">
+                <img src="media/images/DanielFoulen_Selfie600px.jpg" alt="RASTER IMAGES" class="gallery-img responsive-media">
 
                 <h3>Abstract Self Portrait - Vector</h3>
-                <img src="media/images/DanielFoulen_vector_600.png" alt="VECTOR IMAGES" class="gallery-img">
+                <img src="media/images/DanielFoulen_vector_600.png" alt="VECTOR IMAGES" class="gallery-img responsive-media">
                 
                 <h3>Audio Portrait</h3>
-                <body>
-                    <figcaption>Listen to the audio sample:</figcaption>
-                    <audio controls src="media/audio/DanielFoulen_AudioProject.mp3"></audio>
-                </body>
+                <p>Listen to the audio sample:</p>
+                <audio controls src="media/audio/DanielFoulen_AudioProject.mp3" class="responsive-media"></audio>
 
                 <h3>GIF Animation</h3>
-                <img src="media/images/DanielFoulen_GIFani.gif" alt="VECTOR IMAGES" class="gallery-gif">
+                <img src="media/images/DanielFoulen_GIFani.gif" alt="GIF ANIMATION" class="gallery-gif responsive-media">
+
+                <!-- New Additions -->
+
+                <!-- p5.js Animation -->
+                <h3>Interactive p5.js Animation</h3>
+                <p>This is my interactive p5.js animation. Click below to explore the visuals.</p>
+                <div class="p5-container">
+                    <iframe src="https://editor.p5js.org/CrowEchelon/full/R3svoMSsQ" 
+                            width="100%" height="100%" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- After Effects Animation - YouTube -->
+                <h3>After Effects Animation</h3>
+                <p>This After Effects animation explores motion graphics and abstract storytelling.</p>
+                <div class="responsive-media">
+                    <iframe src="https://www.youtube.com/embed/Ie-gFf4KbUY" 
+                            title="After Effects Animation"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Podcast Video - YouTube -->
+                <h3>Podcast Video</h3>
+                <p>In this podcast episode, I discuss creative media production and storytelling techniques.</p>
+                <div class="responsive-media">
+                    <iframe src="https://www.youtube.com/embed/lNdRypTba4U" 
+                            title="Final Project Podcast"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
             </section>
         </main>
         <footer>
