@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Exercise 6</title>
     <style>
-      /* Overall basic styling from previous exercises */
+      /* Overall basic styling */
       body {
         font-family: sans-serif;
         margin: 0;
@@ -18,11 +18,11 @@
       .content {
         max-width: 1170px;
         margin: 0 auto;
-        overflow: auto; /* contains floated elements */
+        overflow: auto; /* Contains floated elements */
         padding: 1em;
       }
       
-      /* Floating columns: each paragraph takes up 48% */
+      /* Floating columns: each paragraph takes 48% of the width */
       .col-left {
         float: left;
         width: 48%;
@@ -32,7 +32,7 @@
         width: 48%;
       }
       
-      /* Ensure footer clears floated elements */
+      /* Clear floats so footer stays below the paragraphs */
       footer {
         clear: both;
       }
