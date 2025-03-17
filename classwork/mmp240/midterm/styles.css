@@ -1,0 +1,94 @@
+/* ========== BASIC RESETS ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+  }
+  
+  /* ========== HEADER / HERO ========== */
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 1200px; /* controlling max width */
+    margin: 0 auto;
+  }
+  
+  /* ========== NAVIGATION ========== */
+  nav {
+    background: #ccc;
+    padding: 1em; /* using em for spacing vertically */
+  }
+  nav ul {
+    list-style: none;
+    display: flex; /* using flex for horizontal layout */
+    gap: 2em; 
+    justify-content: center;
+  }
+  nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* ========== MAIN LAYOUT ========== */
+  main {
+    max-width: 1200px;
+    margin: 1em auto; /* using em for vertical spacing */
+    padding: 0 1em;
+  }
+  
+  /* EXAMPLE: TWO-COLUMN LAYOUT WITH FLOATS (for the About page details) */
+  .show-details {
+    overflow: auto; /* to contain floated elements */
+  }
+  .left-col {
+    float: left;
+    width: 50%;
+  }
+  .right-col {
+    float: right;
+    width: 50%;
+  }
+  .show-details p {
+    margin-bottom: 1em;
+  }
+  
+  /* ========== EPISODES PAGE ========== */
+  .episode-list {
+    margin-top: 2em;
+  }
+  .episode-row {
+    display: flex; /* using flex for row of episodes */
+    gap: 2em;
+    margin-bottom: 2em;
+  }
+  .episode {
+    background: #fff;
+    flex: 1;
+    padding: 1em;
+    border: 1px solid #ddd;
+  }
+  .episode img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .episode h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  /* ========== FOOTER ========== */
+  footer {
+    text-align: center;
+    background: #eee;
+    padding: 1em;
+    font-size: 0.9em; /* using em for font sizing */
+  }
+  
