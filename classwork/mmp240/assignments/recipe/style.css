@@ -1,0 +1,122 @@
+/* --- General Styles --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    /* A subtle gradient background using the background property */
+    background: linear-gradient(to bottom, #fff, #f9f9f9);
+  }
+  
+  /* Skip link styling (with a focus state using a pseudo-class) */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #64a377;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+  }
+  
+  .skip-link:focus {
+    top: 0;
+  }
+  
+  /* --- Header --- */
+  header {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  /* --- Main Content Container --- */
+  .content {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  /* Image styling */
+  .content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  /* --- Recipe Details: Two-Column Layout --- */
+  .recipe-details {
+    overflow: auto; /* Contain floated elements */
+    margin-bottom: 20px;
+  }
+  
+  .ingredients,
+  .directions {
+    width: 48%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .ingredients {
+    float: left;
+    margin-right: 4%;
+  }
+  
+  .directions {
+    float: right;
+  }
+  
+  /* Clear floats after the recipe details */
+  .recipe-details::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* --- Section Headings --- */
+  h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+    border-bottom: 2px solid #64a377;
+    padding-bottom: 5px;
+  }
+  
+  /* --- Lists --- */
+  ul, ol {
+    margin: 10px 0 10px 20px;
+  }
+  
+  /* --- Emphasis --- */
+  strong {
+    font-weight: bold;
+  }
+  
+  /* --- Nutrition Section --- */
+  .nutrition {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-style: italic;
+  }
+  
+  /* --- Footer --- */
+  footer {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 15px 0;
+    border-top: 2px solid #ddd;
+    margin-top: 20px;
+  }
+  
