@@ -3,38 +3,52 @@
   <head>
     <meta charset="utf-8">
     <title>Exercise 5</title>
+
     <style>
+      /* Wrapper styling for layout consistency */
       #wrapper {
         max-width: 1170px;
         margin: 0 auto;
         font-family: sans-serif;
       }
 
-      /* General hyperlink styles: same color for link and visited states, with an underline on hover */
+      /*
+        1) Same color for both link and visited states:
+           By styling <a> without pseudo-classes, any visited link
+           also inherits this color.
+      */
       a {
-        color: #64a377;
+        color: #64a377; 
         text-decoration: none;
       }
+
+      /* 2) Hover state for all hyperlinks */
       a:hover {
         text-decoration: underline;
       }
 
-      /* Navigation links: always black and without underline except on hover */
+      /*
+        3) Navigation list links:
+           - Always black
+           - Remove underline by default
+           - Underlined only on hover
+      */
       nav ul li a {
-        color: black;
+        color: black; 
         text-decoration: none;
       }
       nav ul li a:hover {
         text-decoration: underline;
       }
 
-      /* Input focus state for visibility */
+      /* 4) Focus state for the input box (visual feedback when selected) */
       input:focus {
-        border: 2px solid #64a377;
-        background-color: #f0f0f0;
         outline: none;
+        border: 2px solid #64a377;
+        background-color: #e0f7e0;
       }
     </style>
+
   </head>
   <body>
     <div id="wrapper">
@@ -50,9 +64,7 @@
       </nav>
       <div class="content">
         <h1>Borough of Manhattan Community College</h1>
-        <p>
-          <a href="https://www.bmcc.cuny.edu/">BMCC</a> is a college that is alive with ideas and innovation, and supportive of the innate human striving for self-improvement. We offer opportunity to those students who desire it and wish to strive for it.
-        </p>
+        <p><a href="https://www.bmcc.cuny.edu/">BMCC</a> is a college that is alive with ideas and innovation, and supportive of the innate human striving for self-improvement. We offer opportunity to those students who desire it and wish to strive for it.</p>
         <h3>Request More Information</h3>
         <form action="#" method="get">
           <input type="text" id="emailbox" name="emailbox" placeholder="Your email">
