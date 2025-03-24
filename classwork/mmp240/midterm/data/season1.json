@@ -1,0 +1,67 @@
+[
+    {
+      "season": "season1",
+      "episode": "episode1",
+      "title": "1. Pilot",
+      "length": "43 min",
+      "thumbnail": "assets/season1episode1.jpg",
+      "description": "A kindergarten teacher collapses. House reluctantly gets involved. Snark level: high."
+    },
+    {
+      "season": "season1",
+      "episode": "episode2",
+      "title": "2. Paternity",
+      "length": "43 min",
+      "thumbnail": "assets/season1episode2.jpg",
+      "description": "A teen athlete has night terrors. House questions everything—including paternity."
+    },
+    {
+      "season": "season1",
+      "episode": "episode3",
+      "title": "3. Occam’s Razor",
+      "length": "43 min",
+      "thumbnail": "assets/season1episode3.jpg",
+      "description": "A student collapses with bizarre symptoms. House simplifies the chaos—his way."
+    },
+    {
+      "season": "season1",
+      "episode": "episode4",
+      "title": "4. Maternity",
+      "length": "43 min",
+      "thumbnail": "assets/season1episode4.jpg",
+      "description": "Newborns fall ill in the maternity ward. House throws out ethics to solve it."
+    },
+    {
+      "season": "season1",
+      "episode": "episode5",
+      "title": "5. Damned If You Do",
+      "length": "43 min",
+      "thumbnail": "assets/season1episode5.jpg",
+      "description": "A nun with a rash and visions challenges House’s atheism and diagnostic skills."
+    },
+    {
+      "season": "season1",
+      "episode": "episode6",
+      "title": "6. The Socratic Method",
+      "length": "43 min",
+      "thumbnail": "assets/season1episode6.jpg",
+      "description": "A schizophrenic woman might have something worse. House skips protocol, again."
+    },
+    {
+      "season": "season1",
+      "episode": "episode7",
+      "title": "7. Fidelity",
+      "length": "43 min",
+      "thumbnail": "assets/season1episode7.jpg",
+      "description": "Married woman, sleeping issues, potential parasite. House implies infidelity. A lot."
+    },
+    {
+      "season": "season1",
+      "episode": "episode8",
+      "title": "8. Poison",
+      "length": "43 min",
+      "thumbnail": "assets/season1episode8.jpg",
+      "description": "Teen collapses during a test. House hunts for environmental causes—and sarcasm targets."
+    }
+  ]
+  

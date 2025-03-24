@@ -1,50 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My TV Show - About</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>House M.D. - About</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="about-page">
 
-  <header>
-    <div class="hero">
-      <img src="images/show-hero.jpg" alt="Show Hero Image">
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Hero Header -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>House M.D.</h1>
+      <p>
+        Standard Operating Procedure.  
+        Mondays 8pm on FOX.  
+        <br />
+        The brilliant, sarcastic Dr. Gregory House stops at nothing to solve the toughest cases—sometimes even ethically!
+      </p>
+      <a href="#" class="watch-btn" role="button">▶ WATCH</a>
     </div>
-    <nav>
+
+    <!-- Navigation -->
+    <nav class="hero-nav" aria-label="Main Navigation">
       <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="episodes.html">Episodes</a></li>
+        <li><a href="#">More like this</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <!-- Page Title and Some Intro Info -->
-    <section class="show-intro">
-      <h1>My Awesome TV Show</h1>
-      <span class="metadata">2021, TV-14, 3 Seasons</span>
-      <p class="description">
-        Here’s the show’s description text. I pay attention to visual hierarchy by making
-        the show title large, the metadata smaller and italic, and the body text a normal weight.
-      </p>
+  <!-- Main Content -->
+  <main class="wrapper" id="main">
+    <section class="main-content">
+      <div class="about-info">
+        <h2>About the Show</h2>
+        <p><strong>Genre:</strong> Medical Drama, Mystery, Sarcasm</p>
+        <p><strong>Years Aired:</strong> 2004 – 2012</p>
+        <p><strong>Seasons:</strong> 8</p>
+        <p>
+          “House M.D.” follows Dr. Gregory House, a brilliant, pill-popping misanthrope
+          who solves baffling medical cases in between barbs at his coworkers.
+        </p>
+        <p>
+          Everybody lies—especially patients. But House’s uncanny diagnostic skills and
+          total disregard for social norms often lead to the right solution… eventually.
+        </p>
+      </div>
+
+      <div class="cast-list">
+        <h2>Cast</h2>
+        <ul>
+          <li>Hugh Laurie as Dr. Gregory House</li>
+          <li>Lisa Edelstein as Dr. Lisa Cuddy</li>
+          <li>Omar Epps as Dr. Eric Foreman</li>
+          <li>Robert Sean Leonard as Dr. James Wilson</li>
+          <li>Jennifer Morrison as Dr. Allison Cameron</li>
+          <li>Jesse Spencer as Dr. Robert Chase</li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Credits/Details in Two Columns -->
-    <section class="show-details">
-      <div class="left-col">
-        <!-- Potentially empty or used for more text, or can be omitted entirely -->
+    <section class="info-cards">
+      <div class="info-card">
+        <h3>Fun Fact</h3>
+        <p>Hugh Laurie’s American accent was so convincing, producers didn’t know he was British when they cast him.</p>
       </div>
-      <div class="right-col">
-        <p><strong>Creator:</strong> John Doe</p>
-        <p><strong>Cast:</strong> Jane Actor, Bob Actor, Mary Actor, etc.</p>
-        <p><strong>Genres:</strong> Comedy, Drama</p>
+      <div class="info-card">
+        <h3>Medical Accuracy</h3>
+        <p>The show had medical advisors to ensure the diseases were portrayed realistically—though the timeline often got sped up.</p>
+      </div>
+      <div class="info-card">
+        <h3>Ratings & Awards</h3>
+        <p>“House M.D.” was among the highest-rated TV shows worldwide, winning multiple Emmy Awards and Golden Globes.</p>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 My TV Show</p>
+    &copy; 2025 Houseverse Productions
   </footer>
 
 </body>
