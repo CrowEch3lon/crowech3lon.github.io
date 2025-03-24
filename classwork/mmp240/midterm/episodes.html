@@ -2,58 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My TV Show - Episodes</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>House M.D. - Episodes</title>
+  <link rel="stylesheet" href="episodes.css">
 </head>
-<body>
+<body class="episodes-page">
 
-  <header>
-    <div class="hero">
-      <img src="images/show-hero.jpg" alt="Show Hero Image">
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Hero Header -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>House M.D.</h1>
+      <p>
+        Standard Operating Procedure.  
+        Mondays 8pm on FOX.  
+        <br />
+        The brilliant, sarcastic Dr. Gregory House stops at nothing to solve the toughest cases—sometimes even ethically!
+      </p>
+      <a href="#" class="watch-btn" role="button">▶ WATCH</a>
     </div>
-    <nav>
+
+    <!-- Navigation -->
+    <nav class="hero-nav" aria-label="Main Navigation">
       <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="episodes.html">Episodes</a></li>
+        <li><a href="#">More like this</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="episode-list">
-      <h1>Episodes</h1>
-      <!-- Row 1 -->
-      <div class="episode-row">
-        <div class="episode">
-          <img src="images/episode1.jpg" alt="Episode 1">
-          <h2>Episode 1 Title</h2>
-          <p>Quick synopsis goes here...</p>
-        </div>
-        <div class="episode">
-          <img src="images/episode2.jpg" alt="Episode 2">
-          <h2>Episode 2 Title</h2>
-          <p>Quick synopsis goes here...</p>
-        </div>
-      </div>
-      <!-- Row 2 -->
-      <div class="episode-row">
-        <div class="episode">
-          <img src="images/episode3.jpg" alt="Episode 3">
-          <h2>Episode 3 Title</h2>
-          <p>Quick synopsis goes here...</p>
-        </div>
-        <div class="episode">
-          <img src="images/episode4.jpg" alt="Episode 4">
-          <h2>Episode 4 Title</h2>
-          <p>Quick synopsis goes here...</p>
-        </div>
-      </div>
-    </section>
+  <!-- Main Content -->
+  <main class="wrapper" id="main">
+
+    <!-- Season Select Dropdown -->
+    <div class="season-select-container">
+      <label for="season-select">Season:</label>
+      <select id="season-select">
+        <option value="season1" selected>Season 1</option>
+        <option value="season2">Season 2</option>
+        <option value="season3">Season 3</option>
+        <option value="season4">Season 4</option>
+        <option value="season5">Season 5</option>
+        <option value="season6">Season 6</option>
+        <option value="season7">Season 7</option>
+        <option value="season8">Season 8</option>
+      </select>
+    </div>
+
+    <!-- Scrollable Episode Grid -->
+    <div class="episode-scroll-container">
+      <section class="episode-grid" id="episode-grid">
+        <!-- Episodes dynamically loaded here -->
+        <div id="sentinel"></div>
+      </section>
+    </div>
+
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 My TV Show</p>
+    &copy; 2025 Houseverse Productions
   </footer>
 
+  <!-- JavaScript -->
+  <script src="scripts/episodes.js"></script>
 </body>
 </html>
