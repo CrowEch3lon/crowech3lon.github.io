@@ -1,67 +1,178 @@
 [
-    {
-      "season": "season1",
-      "episode": "episode1",
-      "title": "1. Pilot",
-      "length": "43 min",
-      "thumbnail": "assets/season1episode1.jpg",
-      "description": "A kindergarten teacher collapses. House reluctantly gets involved. Snark level: high."
-    },
-    {
-      "season": "season1",
-      "episode": "episode2",
-      "title": "2. Paternity",
-      "length": "43 min",
-      "thumbnail": "assets/season1episode2.jpg",
-      "description": "A teen athlete has night terrors. House questions everything—including paternity."
-    },
-    {
-      "season": "season1",
-      "episode": "episode3",
-      "title": "3. Occam’s Razor",
-      "length": "43 min",
-      "thumbnail": "assets/season1episode3.jpg",
-      "description": "A student collapses with bizarre symptoms. House simplifies the chaos—his way."
-    },
-    {
-      "season": "season1",
-      "episode": "episode4",
-      "title": "4. Maternity",
-      "length": "43 min",
-      "thumbnail": "assets/season1episode4.jpg",
-      "description": "Newborns fall ill in the maternity ward. House throws out ethics to solve it."
-    },
-    {
-      "season": "season1",
-      "episode": "episode5",
-      "title": "5. Damned If You Do",
-      "length": "43 min",
-      "thumbnail": "assets/season1episode5.jpg",
-      "description": "A nun with a rash and visions challenges House’s atheism and diagnostic skills."
-    },
-    {
-      "season": "season1",
-      "episode": "episode6",
-      "title": "6. The Socratic Method",
-      "length": "43 min",
-      "thumbnail": "assets/season1episode6.jpg",
-      "description": "A schizophrenic woman might have something worse. House skips protocol, again."
-    },
-    {
-      "season": "season1",
-      "episode": "episode7",
-      "title": "7. Fidelity",
-      "length": "43 min",
-      "thumbnail": "assets/season1episode7.jpg",
-      "description": "Married woman, sleeping issues, potential parasite. House implies infidelity. A lot."
-    },
-    {
-      "season": "season1",
-      "episode": "episode8",
-      "title": "8. Poison",
-      "length": "43 min",
-      "thumbnail": "assets/season1episode8.jpg",
-      "description": "Teen collapses during a test. House hunts for environmental causes—and sarcasm targets."
-    }
-  ]
-  
+  {
+    "season": "season1",
+    "episode": "episode01",
+    "title": "01. Pilot",
+    "length": "43 min",
+    "thumbnail": "assets/season1episode01.jpg",
+    "description": "Young kindergarten teacher Rebecca Adler collapses in her classroom after losing intelligible speech while teaching students."
+  },
+  {
+    "season": "season1",
+    "episode": "episode02",
+    "title": "02. Paternity",
+    "length": "43 min",
+    "thumbnail": "assets/season1episode02.jpg",
+    "description": "The team helps a high school boy (16) who has double vision and night terrors. (Clinic Cases: Unvaccinated baby, man with boil on leg.)"
+  },
+  {
+    "season": "season1",
+    "episode": "episode03",
+    "title": "03. Occam's Razor",
+    "length": "44 min",
+    "thumbnail": "assets/season1episode03.jpg",
+    "description": "A college boy whose low blood pressure does not respond with IV fluids piques House's curiosity. Clinic Cases: A woman who had a cold last week, man with a sore throat, woman whose leg hurts after running 6 miles, a boy and his MP..."
+  },
+  {
+    "season": "season1",
+    "episode": "episode04",
+    "title": "04. Maternity",
+    "length": "43 min",
+    "thumbnail": "assets/season1episode04.jpg",
+    "description": "A nightmare scenario hits Princeton Plainsboro when babies in the maternity ward are hit by a potentially fatal epidemic. Clinic Cases: Woman with a parasite!"
+  },
+  {
+    "season": "season1",
+    "episode": "episode05",
+    "title": "05. Damned If You Do",
+    "length": "44 min",
+    "thumbnail": "assets/season1episode05.jpg",
+    "description": "A nun suffering from acute dermatitis and asthma treated by House with possibly the wrong medication comes dangerously close to death."
+  },
+  {
+    "season": "season1",
+    "episode": "episode06",
+    "title": "06. The Socratic Method",
+    "length": "44 min",
+    "thumbnail": "assets/season1episode06.jpg",
+    "description": "A 38-year-old mother, apparently suffering from thrombosis, alcoholism and schizophrenia, has only her young son as caregiver."
+  },
+  {
+    "season": "season1",
+    "episode": "episode07",
+    "title": "07. Fidelity",
+    "length": "44 min",
+    "thumbnail": "assets/season1episode07.jpg",
+    "description": "A woman comes down with symptoms of African sleeping sickness, but there seems to be no way she could have contracted it. House and his aides must ask a few tough questions and make some tough decisions in order to try to save her."
+  },
+  {
+    "season": "season1",
+    "episode": "episode08",
+    "title": "08. Poison",
+    "length": "44 min",
+    "thumbnail": "assets/season1episode08.jpg",
+    "description": "A high school boy has hallucinations and collapses during an exam. When he does not respond to treatments, and the normal tests are negative, Foreman presents the case to House. Clinic Cases: A happy old lady."
+  },
+  {
+    "season": "season1",
+    "episode": "episode09",
+    "title": "09. DNR",
+    "length": "43 min",
+    "thumbnail": "assets/season1episode09.jpg",
+    "description": "A famous jazz trumpeter, diagnosed with ALS, signs a DNR form, but because House believes the diagnosis wrong, he breaks the law by resuscitating him."
+  },
+  {
+    "season": "season1",
+    "episode": "episode10",
+    "title": "10. Histories",
+    "length": "44 min",
+    "thumbnail": "assets/season1episode10.jpg",
+    "description": "A delusional homeless woman is found unconscious in an acid house exhibiting a variety of symptoms which Foreman thinks she's faking."
+  },
+  {
+    "season": "season1",
+    "episode": "episode11",
+    "title": "11. Detox",
+    "length": "44 min",
+    "thumbnail": "assets/season1episode11.jpg",
+    "description": "A girl crashes a Porsche after her boyfriend starts coughing up blood and continues to have unexplained bleeds. Clinic Cases: Cuddy gives House a month off clinic duties if he can spend a week off his pain meds."
+  },
+  {
+    "season": "season1",
+    "episode": "episode12",
+    "title": "12. Sports Medicine",
+    "length": "43 min",
+    "thumbnail": "assets/season1episode12.jpg",
+    "description": "A detoxed sports star about to make his comeback breaks his arm due to brittle bones. Clinic Cases: Woman with leg pain, man trying to remove his contact lenses, a dentist with various issues, and a hung over teenager - all in 70 ..."
+  },
+  {
+    "season": "season1",
+    "episode": "episode13",
+    "title": "13. Cursed",
+    "length": "45 min",
+    "thumbnail": "assets/season1episode13.jpg",
+    "description": "A young boy's fever lasts nearly a week after a Ouija board predicts he will die. Clinic Cases: Chase's case of a man with numb fingers."
+  },
+  {
+    "season": "season1",
+    "episode": "episode14",
+    "title": "14. Control",
+    "length": "45 min",
+    "thumbnail": "assets/season1episode14.jpg",
+    "description": "Can House save a high powered female executive from the same problem that has left him in constant pain? A new head of the hospital board could cause problems. Clinic cases: A boy and his mute dad."
+  },
+  {
+    "season": "season1",
+    "episode": "episode15",
+    "title": "15. Mob Rules",
+    "length": "44 min",
+    "thumbnail": "assets/season1episode15.jpg",
+    "description": "A Mob informer collapses before trial. Is he faking or is he really in a coma? Clinic Cases: A pair of brothers come in when the youngster gets toys stuck up his nose."
+  },
+  {
+    "season": "season1",
+    "episode": "episode16",
+    "title": "16. Heavy",
+    "length": "45 min",
+    "thumbnail": "assets/season1episode16.jpg",
+    "description": "A morbidly obese ten-year-old girl has a heart attack, and her mother insists that House and his team look past her weight to find the diagnosis. Meanwhile, Vogler pressures House to fire a member of his staff. Clinic Patients: Un..."
+  },
+  {
+    "season": "season1",
+    "episode": "episode17",
+    "title": "17. Role Model",
+    "length": "55 min",
+    "thumbnail": "assets/season1episode17.jpg",
+    "description": "An ambitious and charismatic Black senator campaigning for the presidency falls ill from a mysterious malady, possibly AIDS."
+  },
+  {
+    "season": "season1",
+    "episode": "episode18",
+    "title": "18. Babies & Bathwater",
+    "length": "44 min",
+    "thumbnail": "assets/season1episode18.jpg",
+    "description": "While House and his team scramble to discover what's causing brain and kidney dysfunction in a pregnant woman, Vogler is on the warpath to get House fired."
+  },
+  {
+    "season": "season1",
+    "episode": "episode19",
+    "title": "19. Kids",
+    "length": "44 min",
+    "thumbnail": "assets/season1episode19.jpg",
+    "description": "During a meningitis outbreak which overwhelms the clinic, House is drawn to a single patient: a 12-year-old competitive diver whose symptoms don't quite match everyone else's."
+  },
+  {
+    "season": "season1",
+    "episode": "episode20",
+    "title": "20. Love Hurts",
+    "length": "44 min",
+    "thumbnail": "assets/season1episode20.jpg",
+    "description": "House has to deal with his promised dinner date with Cameron, a mysterious stroke in a clinic patient and a libidinous senior citizen."
+  },
+  {
+    "season": "season1",
+    "episode": "episode21",
+    "title": "21. Three Stories",
+    "length": "44 min",
+    "thumbnail": "assets/season1episode21.jpg",
+    "description": "House's ex Stacy Warner asks him to treat her husband. House takes over a diagnostics class for a day and presents the class with three case studies of leg pain. As House tells his story and the class gradually fills up with liste..."
+  },
+  {
+    "season": "season1",
+    "episode": "episode22",
+    "title": "22. Honeymoon",
+    "length": "44 min",
+    "thumbnail": "assets/season1episode22.jpg",
+    "description": "House doses his ex-girlfriend's husband in order to get him into hospital after she begs House to treat him. Is House treating Mark differently in order to get back at Stacy for his leg?"
+  }
+]

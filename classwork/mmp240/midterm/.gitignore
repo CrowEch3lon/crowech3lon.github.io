@@ -1,0 +1,13 @@
+# Python virtual environment
+.venv/
+
+# API keys and sensitive environment variables
+scripts/.env
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# VS Code settings
+.vscode/
