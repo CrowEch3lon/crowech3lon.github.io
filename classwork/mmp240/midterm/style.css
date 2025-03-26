@@ -1,260 +1,287 @@
 /* ======================================
-   Google Font Import
-   ====================================== */
-   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+  Google Font Import
+  ====================================== */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-   /* ======================================
-      Base Styles & Global Resets
-      ====================================== */
-   * {
-     box-sizing: border-box;
-   }
-   
-   body {
-     margin: 0;
-     font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-     background: #f4f7fa;
-     color: #1a1a1a;
-     line-height: 1.7; /* improved readability */
-     font-size: 1em;   /* explicitly set for consistency */
-   }
-   
-   img {
-     max-width: 100%;
-     height: auto;
-   }
-   
-   /* Skip Link (Accessibility) */
-   .skip-link {
-     position: absolute;
-     top: -40px;
-     left: 0;
-     background: #1e3d59;
-     color: #fff;
-     padding: 0.5em;
-     z-index: 1000;
-     transition: top 0.3s;
-     text-decoration: none;
-   }
-   .skip-link:focus {
-     top: 0;
-   }
-   
-   /* ======================================
-      Hero Section
-      ====================================== */
-   .hero {
-     position: relative;
-     width: 100%;
-     height: 400px;
-     display: flex;
-     align-items: center;
-     background: linear-gradient(
-                 to right,
-                 rgba(30, 61, 89, 0.8) 35%,
-                 rgba(0, 0, 0, 0) 65%
-               ),
-               url('assets/house_hero.jpg') center center no-repeat;
-     background-size: cover;
-     color: #ffffff;
-   }
-   
-   .hero-content {
-     max-width: 600px;
-     margin-left: 2em;
-     padding-bottom: 1em; /* extra spacing for breathing room */
-   }
-   
-   .hero-content h1 {
-     font-size: 2.5em;
-     margin-bottom: 0.5em;
-   }
-   
-   .hero-content p {
-     font-size: 1.15em;
-     margin-bottom: 1em;
-     color: #f0f0f0;
-   }
-   
-   .watch-btn {
-     display: inline-block;
-     background: #c30010;
-     color: #ffffff;
-     border: none;
-     padding: 0.75em 1.5em;
-     font-weight: bold;
-     text-decoration: none;
-     font-size: 1em;
-     border-radius: 4px;
-     transition: all 0.3s ease;
-   }
-   
-   .watch-btn:hover,
-   .watch-btn:focus {
-     background: #ffffff;
-     color: #c30010;
-     outline: 2px solid #c30010;
-     cursor: pointer;
-   }
-   
-   /* ======================================
-      Navigation Bar (inside Hero)
-      ====================================== */
-   .hero-nav {
-     position: absolute;
-     bottom: 0;
-     width: 100%;
-     background: rgba(30, 61, 89, 0.9);
-   }
-   
-   .hero-nav ul {
-     list-style: none;
-     margin: 0;
-     padding: 0.75em 0;
-     display: flex;
-     justify-content: center;
-     gap: 2em;
-   }
-   
-   .hero-nav ul li a {
-     color: #f4f7fa;
-     text-decoration: none;
-     font-weight: bold;
-     padding: 0.5em 1.2em; /* slightly increased horizontal padding */
-     transition: background 0.2s ease;
-   }
-   
-   .hero-nav ul li a:hover,
-   .hero-nav ul li a:focus {
-     background: rgba(255, 255, 255, 0.1);
-     border-radius: 5px;
-     outline: none;
-   }
-   
-   /* ======================================
-      Page Layout (General Wrapper)
-      ====================================== */
-   .wrapper {
-     max-width: 960px;
-     margin: 0 auto;
-     padding: 1em;
-   }
-   
-   /* ======================================
-      About Section: Float-Based Two-Column
-      ====================================== */
-   .main-content {
-     overflow: auto;
-   }
-   
-   .about-info {
-     float: left;
-     width: 60%;
-     padding-right: 1em;
-   }
-   
-   .cast-list {
-     float: right;
-     width: 35%;
-     background: #fafafa;
-     padding: 1em;
-     border-left: 3px solid #ccc;
-   }
-   
-   .cast-list ul {
-     margin: 0;
-     padding: 0;
-     list-style: none;
-   }
-   
-   .cast-list li {
-     margin-bottom: 0.5em;
-   }
-   
-   /* ======================================
-      Info Cards (Flexbox)
-      ====================================== */
-   .info-cards {
-     display: flex;
-     gap: 1em;
-     flex-wrap: wrap;
-     margin-top: 2em;
-   }
-   
-   .info-card {
-     flex: 1 1 200px;
-     background: #ffffff;
-     border: 1px solid #dce3ea;
-     padding: 1em;
-     border-radius: 6px;
-     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
-   }
-   
-   .info-card h3 {
-     color: #1e3d59;
-     margin-top: 0;
-   }
-   
-   /* ======================================
-      Footer
-      ====================================== */
-   footer {
-     background: #1e3d59;
-     color: #ffffff;
-     text-align: center;
-     padding: 1.2em 0; /* increased padding for better visual comfort */
-     margin-top: 2em;
-   }
-   
-   /* ======================================
-      Accessibility Focus States
-      ====================================== */
-   a:focus,
-   button:focus {
-     outline: 2px solid #ffffff;
-     outline-offset: 2px;
-   }
-   
-   /* ======================================
-      Custom Scrollbar Styling (Professional)
-      ====================================== */
-   .wrapper::-webkit-scrollbar {
-     width: 10px;
-   }
-   
-   .wrapper::-webkit-scrollbar-track {
-     background: #f4f7fa;
-   }
-   
-   .wrapper::-webkit-scrollbar-thumb {
-     background: #dce3ea;
-     border-radius: 10px;
-   }
-   
-   .wrapper::-webkit-scrollbar-thumb:hover {
-     background: #c4cbd3;
-   }
-   
-   /* ======================================
-      About Page Scrollable Wrapper
-      ====================================== */
-   
-   body.about-page {
-     display: flex;
-     flex-direction: column;
-     height: 100vh;
-     overflow: hidden;
-   }
-   
-   body.about-page .wrapper {
-     flex: 1;
-     overflow-y: auto;
-     padding-bottom: 2em;
-     scroll-behavior: smooth;
-   }
-   
-   body.about-page footer {
-     margin-top: 0;
-     flex-shrink: 0;
-   }
-   
+  /* ======================================
+    Base Styles & Global Resets
+    ====================================== */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: #f4f7fa;
+    color: #1a1a1a;
+    line-height: 1.7; /* improved readability */
+    font-size: 1em;   /* explicitly set for consistency */
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Skip Link (Accessibility) */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #1e3d59;
+    color: #fff;
+    padding: 0.5em;
+    z-index: 1000;
+    transition: top 0.3s;
+    text-decoration: none;
+  }
+  .skip-link:focus {
+    top: 0;
+  }
+  
+  /* ======================================
+    Hero Section
+    ====================================== */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+                to right,
+                rgba(30, 61, 89, 0.8) 35%,
+                rgba(0, 0, 0, 0) 65%
+              ),
+              url('assets/house_hero.jpg') center center no-repeat;
+    background-size: cover;
+    color: #ffffff;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin-left: 2em;
+    padding-bottom: 1em; /* extra spacing for breathing room */
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .hero-content p {
+    font-size: 1.15em;
+    margin-bottom: 1em;
+    color: #f0f0f0;
+  }
+  
+  .watch-btn {
+    display: inline-block;
+    background: #c30010;
+    color: #ffffff;
+    border: none;
+    padding: 0.75em 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .watch-btn:hover,
+  .watch-btn:focus {
+    background: #ffffff;
+    color: #c30010;
+    outline: 2px solid #c30010;
+    cursor: pointer;
+  }
+  
+  /* ======================================
+    Navigation Bar (inside Hero)
+    ====================================== */
+  .hero-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(30, 61, 89, 0.9);
+  }
+  
+  .hero-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+  
+  .hero-nav ul li a {
+    color: #f4f7fa;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 0.6em;
+    transition: background 0.2s ease;
+  }
+  
+  .hero-nav ul li a:hover,
+  .hero-nav ul li a:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  /* ======================================
+    Page Layout (General Wrapper)
+    ====================================== */
+  .wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+  /* ======================================
+    About Section: Float-Based Two-Column
+    ====================================== */
+  .main-content {
+    overflow: auto;
+  }
+  
+  .about-info {
+    float: left;
+    width: 60%;
+    padding-right: 1em;
+  }
+  
+  .cast-list {
+    float: right;
+    width: 35%;
+    background: #fafafa;
+    padding: 1em;
+    border-left: 3px solid #ccc;
+  }
+  
+  .cast-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .cast-list li {
+    margin-bottom: 0.5em;
+  }
+  
+  /* ======================================
+    Info Cards (Flexbox)
+    ====================================== */
+  .info-cards {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-top: 1em;
+  }
+  
+  .info-card {
+    flex: 1 1 200px;
+    background: #ffffff;
+    border: 1px solid #dce3ea;
+    padding: 1em;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  }
+  
+  .info-card h3 {
+    color: #1e3d59;
+    margin-top: 0;
+  }
+  
+  /* ======================================
+    Footer
+    ====================================== */
+  footer {
+    background: #1e3d59;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5em 0;
+    margin-top: 0.2em;
+  }
+  
+  /* ======================================
+    Accessibility Focus States
+    ====================================== */
+  a:focus,
+  button:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+  }
+  
+  /* ======================================
+    Custom Scrollbar Styling (Professional)
+    ====================================== */
+  .wrapper::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .wrapper::-webkit-scrollbar-track {
+    background: #f4f7fa;
+  }
+  
+  .wrapper::-webkit-scrollbar-thumb {
+    background: #dce3ea;
+    border-radius: 10px;
+  }
+  
+  .wrapper::-webkit-scrollbar-thumb:hover {
+    background: #c4cbd3;
+  }
+  
+  /* ======================================
+    About Page Scrollable Wrapper
+    ====================================== */
+  
+  body.about-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  body.about-page .wrapper {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 2em;
+    scroll-behavior: smooth;
+  }
+  
+  body.about-page footer {
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2em 1em 5em; /* extra bottom padding to make room for nav */
+    height: auto; /* allow hero to grow vertically */
+  }
+
+  .hero-content {
+    margin-left: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .watch-btn {
+    margin: 1em auto;
+  }
+
+  .hero-nav {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+}
