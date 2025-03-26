@@ -2,7 +2,7 @@
 .venv/
 
 # API keys and sensitive environment variables
-scripts/.env
+.env
 
 # Byte-compiled / cache files
 __pycache__/
