@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MMP 240 - Daniel Foulen</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MMP 240 - Daniel Foulen</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Welcome to My MMP 240 Class Website</h1>
-    <h2>Daniel Foulen</h2>
-    <img src="IMG_0260.jpg" alt="Daniel Foulen">
-    <p>Hello! I am a design student exploring web development, data visualization, and interactive media.</p>
-    <p>Email: <a href="mailto:danielfoulen@gmail.com">danielfoulen@gmail.com</a></p>
-    
-    <h3>Assignments</h3>
-    <ul>
-        <li><a href="#">Assignment 1</a></li>
-        <li><a href="#">Assignment 2</a></li>
-        <li><a href="#">Assignment 3</a></li>
-    </ul>
+  <div id="container">
+    <header>
+      <h1>Welcome to My MMP 240 Class Website</h1>
+      <h2>Daniel Foulen</h2>
+      <div class="profile">
+        <img src="IMG_0260.jpg" alt="Photo of Daniel Foulen" />
+        <div class="bio">
+          <p>Hello! I’m a design student exploring web development, data visualization, and interactive media.</p>
+          <p>Email: <a href="mailto:danielfoulen@gmail.com">danielfoulen@gmail.com</a></p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="flex-grid">
+        <section class="card">
+          <h3>Assignments</h3>
+          <ul>
+            <li><a href="assignments/recipe/recipe.html">Assignment 1: Recipe Assignment</a></li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h3>Exercises</h3>
+          <ul>
+            <li><a href="exercises/exercise2/exercise2.html">Exercise 2: Linking HTML Files</a></li>
+            <li><a href="exercises/exercise3/exercise3.html">Exercise 3: Basic CSS Styling</a></li>
+            <li><a href="exercises/exercise4/exercise4.html">Exercise 4: Flexbox Centering</a></li>
+            <li><a href="exercises/exercise5/exercise5.html">Exercise 5: Navigation & Forms</a></li>
+            <li><a href="exercises/exercise6/exercise6.html">Exercise 6: Float-Based Layout</a></li>
+            <li><a href="exercises/exercise7/exercise7.html">Exercise 7: Flexbox & Responsive Design</a></li>
+            <li><a href="exercises/exercise8/exercise8.html">Exercise 8: Media Queries</a></li>
+            <li><a href="exercises/exercise9/exercise9.html">Exercise 9: Grid Layout</a></li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Daniel Foulen | MMP 240 | Web Dev + Design</p>
+    </footer>
+  </div>
 </body>
 </html>

@@ -1,0 +1,135 @@
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #f6f1e7;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #3b2f2f;
+    line-height: 1.6;
+    padding: 2rem;
+  }
+  
+  #container {
+    background-color: #fffaf3;
+    border: 2px solid #c2a97e;
+    border-radius: 12px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(100, 85, 60, 0.2);
+  }
+  
+  header,
+  main,
+  footer {
+    margin-bottom: 2rem;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    color: #5b4330;
+    margin-bottom: 0.5em;
+  }
+  
+  a {
+    color: #80592d;
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+    background-color: #f3e8d3;
+    outline: none;
+  }
+  
+  ul {
+    list-style-type: square;
+    padding-left: 1.5em;
+  }
+  
+  section {
+    margin-bottom: 2em;
+  }
+  
+  /* Flexbox layout for cards */
+  .flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .card {
+    flex: 1 1 300px;
+    background-color: #fcf8ee;
+    border: 1px solid #d8c4a3;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .card ul {
+    margin-top: 0.5rem;
+  }
+  
+  /* Bio + Image side by side */
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+  
+  .profile img {
+    max-width: 200px;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  
+  .bio {
+    flex: 1 1 100px;
+    max-width: 500px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #7a6a58;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    body {
+      padding: 1rem;
+    }
+  
+    .flex-grid {
+      flex-direction: column;
+    }
+  
+    .profile {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .bio {
+      max-width: 100%;
+    }
+  
+    header img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
