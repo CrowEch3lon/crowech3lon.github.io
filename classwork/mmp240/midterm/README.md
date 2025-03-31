@@ -41,7 +41,7 @@ midterm/
 ### Front-End
 - **HTML5**: Semantic markup for structure and accessibility.
 - **CSS3**: Mix of float- and flexbox-based layout. Includes responsive typography, custom scrollbars, and mobile-first media queries.
-- **JavaScript** (not shown here): Dynamically loads and displays episode data, implementing lazy loading via Intersection Observer or a scroll sentinel.
+- **JavaScript**: Dynamically loads and displays episode data, implementing lazy loading via the Intersection Observer API with a scroll sentinel element.
 
 ### Back-End / Scraper
 - **Python 3.11+**
@@ -91,7 +91,7 @@ pip install -r requirements.txt
 
 ### 4. Add Your OMDb API Key
 
-Create a `.env` file inside the `scripts/` directory:
+Create a `.env` file inside the `root` directory:
 
 ```
 # scripts/.env
@@ -158,5 +158,5 @@ Make sure `assets/` and `data/` are included in your deployment. Omit `.venv/` a
 The following are excluded from version control via `.gitignore`:
 
 - `.venv/`: Python virtual environment.
-- `scripts/.env`: Contains sensitive API credentials.
+- `.env`: Contains sensitive API credentials.
 - Poster assets and cached data can be included or excluded based on deployment needs.
