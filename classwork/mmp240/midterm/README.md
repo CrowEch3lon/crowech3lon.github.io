@@ -20,12 +20,12 @@ This project features:
 
 ```
 midterm/
+├── .env                    # API key for OMDb (ignored by Git)
 ├── .venv/                  # Python virtual environment (ignored by Git)
 ├── assets/                 # Downloaded poster images
 ├── data/                   # JSON files per season with episode metadata
 ├── scripts/
-│   ├── scraper.py          # OMDb scraping script
-│   └── .env                # API key for OMDb (ignored by Git)
+│   └── scraper.py          # OMDb scraping script
 ├── style.css               # Global styles
 ├── episodes.css            # Page-specific overrides
 ├── about.html              # About the show
