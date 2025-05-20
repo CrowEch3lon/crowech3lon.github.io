@@ -69,7 +69,7 @@ function renderCards(list) {
 
   list.forEach(p => {
     const slug = slugify(p["CUNY Schools"]);
-    const img = `images/logos/${slug}.png`;
+    const img = `images/logos/${slug}.jpg`;
 
     const card = document.createElement('article');
     card.className = 'card';
