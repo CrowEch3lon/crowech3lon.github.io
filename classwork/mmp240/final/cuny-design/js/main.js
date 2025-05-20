@@ -9,8 +9,14 @@ const filters   = {
   borough: document.getElementById('borough-filter')
 };
 
+// Helper guards
+const hasFilters = filters.discipline && filters.degree && filters.borough;
+const hasShowBtn = !!showBtn;
+
 // Load program data and populate filters
 async function loadPrograms() {
+  if (!hasFilters) return;
+
   try {
     const res = await fetch('programs.json');
     programs = await res.json();
@@ -120,6 +126,8 @@ function applyFilters() {
 
 // Toggle results grid visibility
 function setupToggleButton() {
+  if (!hasShowBtn) return;
+
   showBtn.addEventListener('click', () => {
     const isHidden = resultsEl.classList.toggle('hidden');
 
@@ -127,17 +135,19 @@ function setupToggleButton() {
       showBtn.textContent = 'Show Results';
       document.getElementById('filters').scrollIntoView({ behavior: 'smooth' });
     } else {
-      applyFilters(); // Refresh results
+      applyFilters();
       showBtn.textContent = 'Hide Results';
       resultsEl.scrollIntoView({ behavior: 'smooth' });
     }
   });
 }
 
-// Mobile nav toggle
+// Mobile nav toggle (always runs)
 function initNavToggle() {
   const navToggle = document.getElementById('nav-toggle');
   const nav = document.getElementById('site-nav');
+
+  if (!navToggle || !nav) return;
 
   navToggle.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('open');
@@ -151,12 +161,13 @@ document.addEventListener('DOMContentLoaded', () => {
   setupToggleButton();
   initNavToggle();
 
-  // Refilter on change (if grid is visible)
-  Object.values(filters).forEach(select => {
-    select.addEventListener('change', () => {
-      if (!resultsEl.classList.contains('hidden')) {
-        applyFilters();
-      }
+  if (hasFilters && resultsEl) {
+    Object.values(filters).forEach(select => {
+      select.addEventListener('change', () => {
+        if (!resultsEl.classList.contains('hidden')) {
+          applyFilters();
+        }
+      });
     });
-  });
+  }
 });
