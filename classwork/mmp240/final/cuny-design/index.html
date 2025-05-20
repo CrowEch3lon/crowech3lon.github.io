@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Design @ CUNY</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER ------------------------------------------------------------ -->
+  <header class="site-header">
+    <a href="index.html" class="logo">Design @ CUNY</a>
+
+    <button id="nav-toggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="site-nav">
+      ☰
+    </button>
+
+    <nav id="site-nav" class="primary-nav">
+       <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="associates.html">Associates</a></li>
+        <li><a href="bachelors.html">Bachelors</a></li>
+        <li><a href="digital-design.html">Digital Design</a></li>
+        <li><a href="animation.html">Animation</a></li>
+        <li><a href="industrial-design.html">Industrial Design</a></li>
+        <li><a href="brooklyn.html">Brooklyn</a></li>
+        <li><a href="bronx.html">Bronx</a></li>
+        <li><a href="manhattan.html">Manhattan</a></li>
+        <li><a href="queens.html">Queens</a></li>
+        <li><a href="https://www.cuny.edu/about/">About CUNY</a></li>
+        <li><a href="https://www.cuny.edu/financialaid/">Financial Aid</a></li>
+        <li><a href="https://www.cuny.edu/admissions/apply-to-cuny/">Apply</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="hero-banner">
+    <img src="images/hero-image.jpg" 
+        alt="Students working on digital design projects at CUNY" 
+        class="hero-img">
+    <div class="hero-overlay">
+      <h1>Find Your Path in Design @ CUNY</h1>
+      <p>Explore animation, digital design, and industrial design programs across NYC's public colleges.</p>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- FILTERS + SHOW BUTTON ------------------------------------------- -->
+    <section id="filters" class="filter-section">
+      <h2>Find a Design Program</h2>
+      <p>Search by:</p>
+
+      <div class="filter-bar">
+        <label>
+          Discipline
+          <select id="discipline-filter">
+            <option value="">All</option>
+            <option value="Digital Design">Digital Design</option>
+            <option value="Animation">Animation</option>
+            <option value="Industrial Design">Industrial Design</option>
+          </select>
+        </label>
+
+        <label>
+          Degree
+          <select id="degree-filter">
+            <option value="">All</option>
+            <option value="associate">Associate</option>
+            <option value="bachelor">Bachelor</option>
+          </select>
+        </label>
+
+        <label>
+          Borough
+          <select id="borough-filter">
+            <option value="">All</option>
+            <option value="Brooklyn">Brooklyn</option>
+            <option value="Bronx">Bronx</option>
+            <option value="Manhattan">Manhattan</option>
+            <option value="Queens">Queens</option>
+          </select>
+        </label>
+
+        <!-- Reveal Button -->
+        <button id="show-btn" class="btn">Show Results</button>
+      </div>
+    </section>
+
+    <!-- PROMO BANNER ----------------------------------------------------- -->
+    <section class="promo-banner">
+      <hr>
+      <p>
+        Queens College Ranked in Top 25 of Best Public Colleges and Universities
+        for Graphic Design in the Nation.
+      </p>
+      <a href="http://www1.cuny.edu/mu/forum/2018/02/07/queens-college-ranked-in-top-25-of-best-public-colleges-and-universities-for-graphic-design-in-the-nation/" class="read-more">Read More</a>
+      <hr>
+    </section>
+
+    <!-- RESULTS GRID (initially hidden) ---------------------------------- -->
+    <section id="results" class="cards-grid hidden">
+      <!-- JS injects program cards here -->
+    </section>
+
+    <!-- NEWS & EVENTS ---------------------------------------------------- -->
+    <section class="news-events">
+
+      <div class="news">
+        <h2>Design News</h2>
+
+        <article>
+          <h3>
+            CUNY TV Wins 21st New York Emmy Award For Animated Opening
+            Sequence of 'Shades of U.S.'
+          </h3>
+          <time datetime="2020-04-27">April 27, 2020</time>
+          <p>
+            The City University of New York won two awards in the 63rd New York
+            Emmy Awards, as CUNY TV and the New York City College of Technology
+            each earned honors in Saturday's ceremony. The award for CUNY TV
+            brings to 21 the total number of Emmys the station has been awarded.
+          </p>
+          <a href="https://www1.cuny.edu/mu/forum/2020/04/27/cuny-tv-wins-21st-new-york-emmy-award-for-animated-opening-sequence-of-shades-of-u-s/" class="read-more">Read More</a>
+        </article>
+
+        <article>
+          <h3>
+            CUNY Expands Digital Skills Curriculum and Creates Student Pipeline
+            for Tech Jobs
+          </h3>
+          <time datetime="2019-10-28">October 28, 2019</time>
+          <p>
+            CUNY has expanded its digital skills curriculum to cultivate a
+            diverse pipeline of critical thinkers equipped for tech-driven
+            workplaces, while encouraging under-represented groups to enter
+            technology fields.
+          </p>
+          <a href="https://www1.cuny.edu/mu/forum/2019/10/28/cuny-expands-digital-skills-curriculum-and-creates-student-pipeline-for-tech-jobs/" class="read-more">Read More</a>
+        </article>
+      </div>
+
+      <aside class="events">
+        <h2>Events</h2>
+        <article class="event-card">
+          <img src="images/Digital-Design-Showcase-cropped.jpg" 
+              alt="Digital Design Showcase at Bronx Community College" 
+              width="445" height="340" />
+
+          <div class="event-details">
+            <h3>Virtual Digital Design Showcase Day</h3>
+            <p><strong>Date:</strong> June 18, 2020</p>
+            <p><strong>Time:</strong> 2:00 PM — 4:00 PM</p>
+            <p><strong>College:</strong> Bronx Community College</p>
+          </div>
+        </article>
+      </aside>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER ------------------------------------------------------------- -->
+  <footer class="site-footer">
+    <p>© 2025 The City University of New York</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

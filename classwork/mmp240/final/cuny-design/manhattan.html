@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Programs in Manhattan – Design @ CUNY</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">Design @ CUNY</a>
+    <button id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+    <nav id="site-nav" class="primary-nav">
+      <ul>
+        <li><a href="associates.html">Associates</a></li>
+        <li><a href="bachelors.html">Bachelors</a></li>
+        <li><a href="digital-design.html">Digital Design</a></li>
+        <li><a href="animation.html">Animation</a></li>
+        <li><a href="industrial-design.html">Industrial Design</a></li>
+        <li><a href="brooklyn.html">Brooklyn</a></li>
+        <li><a href="bronx.html">Bronx</a></li>
+        <li><a href="manhattan.html">Manhattan</a></li>
+        <li><a href="queens.html">Queens</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Programs in Manhattan</h1>
+      <p>All design programs located in Manhattan-based CUNY schools.</p>
+    </section>
+
+    <section id="results" class="cards-grid">
+      <!-- JS injects matching program cards here -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 The City University of New York</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('programs.json')
+        .then(res => res.json())
+        .then(data => {
+          const filtered = data.filter(p => {
+            return p.Borough === "Manhattan";
+          });
+          renderStaticCards(filtered);
+        });
+
+      function slugify(str) {
+        return str.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim().replace(/\s+/g, '-');
+      }
+
+      function renderStaticCards(list) {
+        const resultsEl = document.getElementById('results');
+        resultsEl.innerHTML = '';
+        list.forEach(p => {
+          const slug = slugify(p["CUNY Schools"]);
+          const img = `images/logos/${slug}.png`;
+          const card = document.createElement('article');
+          card.className = 'card';
+          card.innerHTML = `
+            <img src="${img}" alt="${p["CUNY Schools"]} logo" width="300" height="150">
+            <div class="card-content">
+              <h3>${p.Programs}</h3>
+              <p class="degree">${p.Degree}</p>
+              <p class="school">${p["CUNY Schools"]}</p>
+              <p>${p.Description}</p>
+              <a href="${p.Links}" target="_blank" rel="noopener">Learn More →</a>
+            </div>
+          `;
+          resultsEl.appendChild(card);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
